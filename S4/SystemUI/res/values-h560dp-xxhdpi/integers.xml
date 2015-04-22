@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="keyguard_max_notification_count">4</integer>
+    <item type="integer" name="APKTOOL_DUMMY_003d">false</item>
+</resources>

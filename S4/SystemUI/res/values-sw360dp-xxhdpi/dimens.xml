@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="eca_overlap">-5.0dip</dimen>
+    <dimen name="kg_widget_common_date_text_size">18.0dip</dimen>
+    <dimen name="kg_dualclock_margin_left">19.0dip</dimen>
+    <dimen name="kg_dualclock_margin_right">19.0dip</dimen>
+    <dimen name="kg_dualclock_roaming_locale_text_margin_left">0.0dip</dimen>
+    <dimen name="kg_dualclock_home_locale_text_margin_left">0.0dip</dimen>
+    <dimen name="status_bar_carrier_text_size">14.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_023c">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_023d">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_023e">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_023f">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0241">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_039e">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_039f">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_03a0">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_03a1">false</item>
+</resources>
