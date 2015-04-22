@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_settings_header_view_text_left_right_padding">11.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_041b">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_041c">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0428">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0429">false</item>
+</resources>
