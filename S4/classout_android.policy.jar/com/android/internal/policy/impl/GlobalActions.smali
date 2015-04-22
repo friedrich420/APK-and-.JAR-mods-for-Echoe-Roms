@@ -3170,7 +3170,7 @@
     iput-object v2, v0, mSealedModeToggle:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
 
     .line 1169
-    new-instance v2, Lcom/android/internal/policy/impl/GlobalActions$8;
+    new-instance v2, Lcom/android/internal/policy/impl/GlobalActions$99;
 
     const v3, 0x1080a57
 
@@ -3178,7 +3178,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v2, v0, v3, v4}, Lcom/android/internal/policy/impl/GlobalActions$8;-><init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
+    invoke-direct {v2, v0, v3, v4}, Lcom/android/internal/policy/impl/GlobalActions$99;-><init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
 
     move-object/from16 v0, p0
 
