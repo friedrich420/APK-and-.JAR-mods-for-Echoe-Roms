@@ -1048,12 +1048,51 @@
 .end method
 
 .method static final startEmergencyModeService(Landroid/content/Context;)V
-    .registers 1
+    .registers 6
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 2291
+    :try_start_0
+    invoke-static {p0}, Lcom/sec/android/emergencymode/EmergencyManager;->getInstance(Landroid/content/Context;)Lcom/sec/android/emergencymode/EmergencyManager;
+
+    move-result-object v1
+
+    .local v1, "emMgr":Lcom/sec/android/emergencymode/EmergencyManager;
+    invoke-virtual {v1}, Lcom/sec/android/emergencymode/EmergencyManager;->readyEmergencyMode()V
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_7} :catch_8
+
+    .end local v1    # "emMgr":Lcom/sec/android/emergencymode/EmergencyManager;
+    :goto_7
     return-void
+
+    :catch_8
+    move-exception v0
+
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v2, "SystemServer"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Starting emergency service failed: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_7
 .end method
 
 .method private startOtherServices()V
