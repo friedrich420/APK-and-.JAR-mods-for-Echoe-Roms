@@ -178,8 +178,8 @@ However, you may receive cumulative push data when you turn on the screen."</str
     <string name="five">5</string>
     <string name="six">6</string>
     <string name="seven">7</string>
-    <string name="eight">8</string>
-    <string name="nine">9</string>
+    <string name="eight">11</string>
+    <string name="nine">12</string>
     <string name="zero">0</string>
     <string name="ten">10</string>
     <string name="masked_star_chars">****</string>

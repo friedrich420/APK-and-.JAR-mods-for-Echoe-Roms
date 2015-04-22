@@ -2493,7 +2493,7 @@
     if-eqz v25, :cond_30
 
     .line 736
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE,BRILLIANTRING,POPPINGCOLOURS,LIGHTEFFECT,BRILLIANTCUT"
 
     const-string v26, "WATERCOLOUR"
 
@@ -2503,9 +2503,9 @@
 
     if-nez v25, :cond_28
 
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE,BRILLIANTRING,POPPINGCOLOURS,LIGHTEFFECT,BRILLIANTCUT"
 
-    const-string v26, "BLIND"
+    const-string v26, "LIGHTEFFECT"
 
     invoke-virtual/range {v25 .. v26}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -2513,7 +2513,7 @@
 
     if-nez v25, :cond_28
 
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE,BRILLIANTRING,POPPINGCOLOURS,LIGHTEFFECT,BRILLIANTCUT"
 
     const-string v26, "BRILLIANTRING"
 
@@ -2523,7 +2523,7 @@
 
     if-nez v25, :cond_28
 
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE,BRILLIANTRING,POPPINGCOLOURS,LIGHTEFFECT,BRILLIANTCUT"
 
     const-string v26, "BRILLIANTCUT"
 
@@ -2533,7 +2533,7 @@
 
     if-nez v25, :cond_28
 
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE,BRILLIANTRING,POPPINGCOLOURS,LIGHTEFFECT,BRILLIANTCUT"
 
     const-string v26, "POPPINGCOLOURS"
 
@@ -2587,9 +2587,9 @@
     invoke-interface {v4, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 757
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE,BRILLIANTRING,POPPINGCOLOURS,LIGHTEFFECT,BRILLIANTCUT"
 
-    const-string v26, "BLIND"
+    const-string v26, "LIGHTEFFECT"
 
     invoke-virtual/range {v25 .. v26}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -2626,7 +2626,7 @@
 
     move-result-object v25
 
-    const v26, 0x7f0a1bf8
+    const v26, 0x7f0a169c
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2641,7 +2641,7 @@
 
     move-result-object v25
 
-    const v26, 0x7f0a00a3
+    const v26, 0x7f0a00a0
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2653,7 +2653,7 @@
 
     .line 763
     :cond_29
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE,BRILLIANTRING,POPPINGCOLOURS,LIGHTEFFECT,BRILLIANTCUT"
 
     const-string v26, "BRILLIANTRING"
 
@@ -2668,7 +2668,7 @@
 
     move-result-object v25
 
-    const v26, 0x7f0a1bfc
+    const v26, 0x7f0a0fbb
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2683,7 +2683,7 @@
 
     move-result-object v25
 
-    const v26, 0x7f0a00a6
+    const v26, 0x7f0a00a9
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2695,7 +2695,7 @@
 
     .line 767
     :cond_2a
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE,BRILLIANTRING,POPPINGCOLOURS,LIGHTEFFECT,BRILLIANTCUT"
 
     const-string v26, "BRILLIANTCUT"
 
@@ -2710,7 +2710,7 @@
 
     move-result-object v25
 
-    const v26, 0x7f0a1bfd
+    const v26, 0x7f0a1bfe
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2725,7 +2725,7 @@
 
     move-result-object v25
 
-    const v26, 0x7f0a00a7
+    const v26, 0x7f0a00a6
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2737,7 +2737,7 @@
 
     .line 771
     :cond_2b
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE,BRILLIANTRING,POPPINGCOLOURS,LIGHTEFFECT,BRILLIANTCUT"
 
     const-string v26, "POPPINGCOLOURS"
 
@@ -2803,7 +2803,7 @@
 
     .line 783
     :cond_2c
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE,BRILLIANTRING,POPPINGCOLOURS,LIGHTEFFECT,BRILLIANTCUT"
 
     const-string v26, "WATERCOLOUR"
 
@@ -2845,7 +2845,7 @@
 
     .line 787
     :cond_2d
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE,BRILLIANTRING,POPPINGCOLOURS,LIGHTEFFECT,BRILLIANTCUT"
 
     const-string v26, "RIPPLE"
 
@@ -2884,7 +2884,7 @@
 
     move-result-object v25
 
-    const v26, 0x7f0a1c13
+    const v26, 0x7f0a1bff
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2899,7 +2899,7 @@
 
     move-result-object v25
 
-    const v26, 0x7f0a009f
+    const v26, 0x7f0a00a7
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3699,7 +3699,7 @@
     if-eqz v25, :cond_44
 
     .line 894
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v26, "INK"
 
@@ -6906,7 +6906,7 @@
     .line 797
     .restart local v14    # "mDefaultUnlock":I
     :cond_a6
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v26, "RIPPLE"
 
@@ -6927,7 +6927,7 @@
 
     .line 800
     :cond_a7
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v26, "POPPINGCOLOURS"
 
@@ -7525,7 +7525,7 @@
 
     if-eqz v25, :cond_c4
 
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v26, "WATERCOLOUR"
 
@@ -7573,7 +7573,7 @@
 
     if-eqz v25, :cond_c6
 
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v26, "WATERCOLOUR"
 
@@ -9703,7 +9703,7 @@
 
     if-eqz v25, :cond_116
 
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v26, "WATERCOLOUR"
 
@@ -9736,7 +9736,7 @@
 
     if-eqz v25, :cond_117
 
-    const-string v25, "NONE"
+    const-string v25, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v26, "WATERCOLOUR"
 
@@ -14283,7 +14283,7 @@
     .line 2645
     .end local v0    # "lockPatternUtils":Lcom/android/internal/widget/LockPatternUtils;
     :cond_2
-    const-string v2, "NONE"
+    const-string v2, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v3, "WATERCOLOUR"
 
@@ -14293,7 +14293,7 @@
 
     if-nez v2, :cond_3
 
-    const-string v2, "NONE"
+    const-string v2, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v3, "BLIND"
 
@@ -14303,7 +14303,7 @@
 
     if-nez v2, :cond_3
 
-    const-string v2, "NONE"
+    const-string v2, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v3, "POPPINGCOLOURS"
 
@@ -18529,7 +18529,7 @@
 
     .line 2031
     :goto_a
-    const-string v2, "NONE"
+    const-string v2, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v3, "WATERCOLOUR"
 
@@ -18539,7 +18539,7 @@
 
     if-nez v2, :cond_10
 
-    const-string v2, "NONE"
+    const-string v2, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v3, "BLIND"
 
@@ -18549,7 +18549,7 @@
 
     if-nez v2, :cond_10
 
-    const-string v2, "NONE"
+    const-string v2, "NONE,WATERCOLOUR,RIPPLE"
 
     const-string v3, "POPPINGCOLOURS"
 
