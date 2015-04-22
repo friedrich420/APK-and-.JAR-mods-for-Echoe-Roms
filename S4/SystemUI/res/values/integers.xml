@@ -7,7 +7,7 @@
     <integer name="kg_glowpad_rotation_offset">0</integer>
     <integer name="config_recents_max_thumbnail_count">10</integer>
     <integer name="config_recents_max_icon_count">20</integer>
-    <integer name="config_maxNotificationIcons">5</integer>
+    <integer name="config_maxNotificationIcons">6</integer>
     <integer name="config_show_search_delay">200</integer>
     <integer name="config_vibration_duration">0</integer>
     <integer name="config_search_panel_view_vibration_duration">20</integer>
@@ -16,7 +16,7 @@
     <integer name="navigation_bar_deadzone_hold">333</integer>
     <integer name="navigation_bar_deadzone_decay">333</integer>
     <integer name="config_recent_item_min_alpha">3</integer>
-    <integer name="quick_settings_num_columns">5</integer>
+    <integer name="quick_settings_num_columns">6</integer>
     <integer name="quick_settings_max_rows">10</integer>
     <integer name="quick_settings_max_rows_keyguard">3</integer>
     <integer name="quick_settings_user_time_settings_tile_span">1</integer>
