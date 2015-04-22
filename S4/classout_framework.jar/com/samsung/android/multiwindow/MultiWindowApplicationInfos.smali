@@ -15,6 +15,8 @@
 
 
 # static fields
+.field private static final CONFIG_FILE:Ljava/lang/String; = "/system/etc/mw_blacklist.txt"
+
 .field private static final SUPPORTEDSCALE_ALL_APPLICATIONS:Z
 
 .field private static final SUPPORTED_ALL_APPLICATIONS:Z
@@ -59,6 +61,17 @@
 .end field
 
 .field mMaxPenWindowCount:I
+
+.field private mMultiWindowBlackList:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field mNoTitleActivityList:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -687,7 +700,7 @@
     .param p1, "activityInfo"    # Landroid/content/pm/ActivityInfo;
 
     .prologue
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 241
     if-eqz p1, :cond_7
@@ -741,39 +754,88 @@
 .end method
 
 .method public isSupportApp(Ljava/lang/String;)Z
-    .registers 3
-    .param p1, "packageName"    # Ljava/lang/String;
+    .registers 6
 
-    .prologue
-    .line 139
-    iget-object v0, p0, mSupportAppList:Ljava/util/ArrayList;
+    iget-object v2, p0, mMultiWindowBlackList:Ljava/util/List;
 
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+    if-nez v2, :cond_3b
 
-    move-result v0
+    new-instance v2, Ljava/util/ArrayList;
 
-    if-nez v0, :cond_10
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    const-string v0, "android"
+    iput-object v2, p0, mMultiWindowBlackList:Ljava/util/List;
 
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    new-instance v2, Ljava/io/File;
 
-    move-result v0
+    const-string v3, "/system/etc/mw_blacklist.txt"
 
-    if-eqz v0, :cond_12
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 140
-    :cond_10
-    const/4 v0, 0x1
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
-    .line 142
-    :goto_11
-    return v0
+    move-result v2
 
-    :cond_12
-    const/4 v0, 0x0
+    if-eqz v2, :cond_3b
 
-    goto :goto_11
+    :try_start_18
+    new-instance v1, Ljava/io/BufferedReader;
+
+    new-instance v2, Ljava/io/FileReader;
+
+    const-string v3, "/system/etc/mw_blacklist.txt"
+
+    invoke-direct {v2, v3}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
+
+    invoke-direct {v1, v2}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+
+    :cond_24
+    :goto_24
+    invoke-virtual {v1}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3b
+
+    invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    if-lez v2, :cond_24
+
+    iget-object v2, p0, mMultiWindowBlackList:Ljava/util/List;
+
+    invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    :try_end_39
+    .catch Ljava/lang/Exception; {:try_start_18 .. :try_end_39} :catch_3a
+
+    goto :goto_24
+
+    :catch_3a
+    move-exception v2
+
+    :cond_3b
+    iget-object v2, p0, mMultiWindowBlackList:Ljava/util/List;
+
+    invoke-interface {v2, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_45
+
+    const/4 v2, 0x1
+
+    :goto_44
+    return v2
+
+    :cond_45
+    const/4 v2, 0x0
+
+    goto :goto_44
 .end method
 
 .method public isSupportComponentList(Ljava/lang/String;)Z
@@ -1029,18 +1091,11 @@
 .end method
 
 .method public isSupportScaleApp(Landroid/content/pm/ActivityInfo;)Z
-    .registers 3
-    .param p1, "activityInfo"    # Landroid/content/pm/ActivityInfo;
+    .registers 2
 
-    .prologue
-    .line 166
-    const/4 v0, 0x0
+    const/4 p0, 0x1
 
-    invoke-virtual {p0, p1, v0}, isSupportScaleApp(Landroid/content/pm/ActivityInfo;Landroid/content/Context;)Z
-
-    move-result v0
-
-    return v0
+    return p0
 .end method
 
 .method public isSupportScaleApp(Landroid/content/pm/ActivityInfo;Landroid/content/Context;)Z
