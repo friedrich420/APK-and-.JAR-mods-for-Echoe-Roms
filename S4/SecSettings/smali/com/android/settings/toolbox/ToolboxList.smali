@@ -149,10 +149,12 @@
     .locals 1
 
     .prologue
-    const/4 v0, 0x5
+    const/16 v0, 0xc
 
     .line 88
     sput v0, Lcom/android/settings/toolbox/ToolboxList;->MAX_TOOLBOX_APPS:I
+
+    const/4 v0, 0x5
 
     .line 89
     sput v0, Lcom/android/settings/toolbox/ToolboxList;->MAX_DEFAULT_APPS:I

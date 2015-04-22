@@ -1282,7 +1282,7 @@
 
     add-int/2addr v2, v4
 
-    mul-int/lit8 v2, v2, 0x4
+    mul-int/lit8 v2, v2, 0xc
 
     add-int/2addr v0, v2
 
