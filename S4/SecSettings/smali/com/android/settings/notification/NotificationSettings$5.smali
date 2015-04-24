@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/notification/NotificationSettings;->initPulse(Landroid/preference/PreferenceCategory;)V
+    value = Lcom/android/settings/notification/NotificationSettings;->initHeads(Landroid/preference/PreferenceCategory;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -59,14 +59,14 @@
 
     move-result-object v2
 
-    const-string v3, "notification_light_pulse"
+    const-string v3, "heads_up_notifications_enabled"
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x1
 
     :goto_0
-    invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v2, v3, v1}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     move-result v1
 
