@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="progressbar_height">76.0dip</dimen>
+    <dimen name="progressbar_margin_bottom">12.0dip</dimen>
+    <dimen name="setupwizard_title_text_size">32.0dip</dimen>
+</resources>

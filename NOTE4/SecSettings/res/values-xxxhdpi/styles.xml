@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SecurityPreferenceButtonContainer" parent="@style/bottom_bar_container">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">2.0</item>
+    </style>
+    <style name="SecurityPreferenceButton" parent="@style/bottom_bar_button">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="SettingsTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionbarIconDisable</item>
+    </style>
+    <style name="ActionbarIconDisable" parent="@android:style/Widget.DeviceDefault.Light.ActionButton.CloseMode">
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="SettingsTheme.DialogWhenLarge" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionModeCloseButtonStyle">@style/ActionbarIconDisable</item>
+    </style>
+    <style name="RobotoTextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="bottom_bar_container">
+        <item name="android:background">@drawable/tw_ab_bottom_transparent_mtrl</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">2.0</item>
+    </style>
+    <style name="bottom_bar_button">
+        <item name="android:textAppearance">?android:textAppearanceButton</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/ripple_bottom_bar_button</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">@dimen/bottom_bar_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+</resources>

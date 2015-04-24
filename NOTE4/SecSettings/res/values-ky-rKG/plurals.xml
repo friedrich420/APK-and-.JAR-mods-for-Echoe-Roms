@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="show_dev_countdown">
+        <item quantity="other">Сиздин өндүрүүчү болушуңузга %1$d кадам калды.</item>
+        <item quantity="one">Сиздин өндүрүүчү болушуңузга %1$d кадам калды.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">Сырсөз кеминде %d тамгадан турушу керек.</item>
+        <item quantity="one">Сырсөз кеминде 1 тамгадан турушу керек.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">Сырсөз кеминде %d кичине тамганы камтышы керек.</item>
+        <item quantity="one">Сырсөз кеминде 1 кичине тамганы камтышы керек.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">Сырсөз кеминде %d баш тамганы камтышы керек.</item>
+        <item quantity="one">Сырсөз кеминде 1 баш тамганы камтышы керек.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">Сырсөз кеминде %d цифраны камтышы керек.</item>
+        <item quantity="one">Сырсөз кеминде %d сандык цифрадан турушу керек.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">Сырсөз кеминде %d атайын белгини камтышы керек.</item>
+        <item quantity="one">Сырсөз кеминде 1 цифраны камтышы керек.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">Сырсөз кеминде %d тамга эмес белгини камтышы керек.</item>
+        <item quantity="one">Сырсөз кеминде 1 тамга эмес белгини камтышы керек.</item>
+    </plurals>
+    <plurals name="manage_notification_access_summary_nonzero">
+        <item quantity="other">%d колдонмо эскертүүлөрдү окуй алат</item>
+        <item quantity="one">%d колдонмо эскертүүлөрдү окуй алат</item>
+    </plurals>
+    <plurals name="wrong_pin_code">
+        <item quantity="other">SIM PIN-коду туура эмес, сизде %d аракет калды.</item>
+        <item quantity="one">SIM PIN-коду туура эмес, сизде %d аракет калды. Болбосо, түзмөктү бөгөттөн чыгарыш үчүн операторуңузга кайрылышыңыз керек.</item>
+    </plurals>
+    <plurals name="manage_condition_providers_summary_nonzero">
+        <item quantity="other">%d колдонмолору шарттар менен камсыз кылышат</item>
+        <item quantity="one">%d колдонмосу шарттар менен камсыз кылат</item>
+    </plurals>
+</resources>

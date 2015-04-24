@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:id="@id/flash_noti" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/alert_dialog_padding_top" android:text="@string/flash_need_motion_popup_2014" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/alert_dialog_padding_left_right" android:layout_marginEnd="@dimen/alert_dialog_padding_left_right" />
+        <CheckBox android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:layout_gravity="start" android:id="@id/never_show_flash_noti_dialog_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/do_not_show_again_popup_checkbox_margin_top" android:layout_marginBottom="@dimen/do_not_show_again_popup_checkbox_margin_bottom" android:text="@string/do_not_show_again" android:fontFamily="sec-roboto-light" android:paddingStart="5.0dip" android:layout_marginStart="19.0dip" android:layout_marginEnd="19.0dip" />
+    </LinearLayout>
+</ScrollView>

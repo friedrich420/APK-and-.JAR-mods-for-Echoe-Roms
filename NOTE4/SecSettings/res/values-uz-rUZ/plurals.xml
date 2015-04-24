@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="show_dev_countdown">
+        <item quantity="other">Dasturchi bo‘lishingizga bor-yo‘g‘i %1$d qadam qoldi.</item>
+        <item quantity="one">Dasturchi bo‘lishingizga bor-yo‘g‘i %1$d qadam qoldi.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">Parol kamida %d harflarga ega bo‘lishi kerak</item>
+        <item quantity="one">Parol kamida 1 harfga ega bo‘lishi kerak.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">Parol kamida %d kichik harflarga ega bo‘lishi kerak.</item>
+        <item quantity="one">Parol kamida 1 kichik harfga ega bo‘lishi kerak.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">Parol kamida %d katta harflarga ega bo‘lishi kerak.</item>
+        <item quantity="one">Parol kamida 1 katta harfga ega bo‘lishi kerak.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">Parol kamida %d raqamga ega bo‘lishi kerak.</item>
+        <item quantity="one">Parol kamida 1 raqamga ega bo‘lishi kerak.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">Parol kamida %d maxsus belgilarga ega bo‘lishi kerak.</item>
+        <item quantity="one">Parol kamida 1 maxsus belgiga ega bo‘lishi kerak.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">Parol kamida %d belgilarga ega bo‘lishi kerak.</item>
+        <item quantity="one">Parol kamida 1 belgiga ega bo‘lishi kerak.</item>
+    </plurals>
+    <plurals name="manage_notification_access_summary_nonzero">
+        <item quantity="other">%d ilovalari xabarnomalarni o‘qishi mumkin</item>
+        <item quantity="one">%d ilovasi xabarnomalarni o‘qishi mumkin</item>
+    </plurals>
+    <plurals name="wrong_pin_code">
+        <item quantity="other">SIM kartaning PIN kodi noto‘g‘ri terildi. Siz yana %d marta urinib ko‘rishingiz mumkin.</item>
+        <item quantity="one">SIM kartaning PIN kodi noto‘g‘ri terildi. Qurilmangiz qulflanib uni qulfdan ochish maqsadida operatoringizga qo‘ng‘iroq qilishdan oldin, siz yana %d marta urinib ko‘rishingiz mumkin.</item>
+    </plurals>
+    <plurals name="manage_condition_providers_summary_nonzero">
+        <item quantity="other">%d ta ilova shart qo‘yadi</item>
+        <item quantity="one">%d ta ilova shart qo‘yadi</item>
+    </plurals>
+</resources>
