@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_mobile_mtu">1422</integer>
+    <integer name="config_cdma_3waycall_flash_delay">70</integer>
+    <item type="integer" name="APKTOOL_DUMMY_00be">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_00bf">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_00c0">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_00c1">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_00c2">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_00c3">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_00c4">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_00c5">false</item>
+</resources>

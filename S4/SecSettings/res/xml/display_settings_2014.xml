@@ -34,6 +34,7 @@
     <CheckBoxPreference android:persistent="false" android:title="@string/display_battery_percentage" android:key="display_battery_level" android:summary="@string/display_battery_percentage_summary" />
     <PreferenceCategory android:title="@string/tts_general_section_title" android:key="general" />
     <PreferenceScreen android:title="@string/wallpaper" android:key="wallpaper" android:fragment="com.android.settings.WallpaperSettings" />
+    <SwitchPreference android:persistent="false" android:title="@string/doze_title" android:key="doze" android:summary="@string/doze_summary" />
     <PreferenceScreen android:title="@string/notification_panel_title" android:key="notification_panel_edit" android:fragment="com.android.settings.NotificationPanelMenu" />
     <CheckBoxPreference android:title="@string/multi_window_title" android:key="key_multi_window" android:summary="@string/multi_window_summary" />
     <com.android.settings.SwitchPreferenceScreen android:title="@string/page_buddy" android:key="contextualpage_settings" android:summary="@string/page_buddy_summary" android:fragment="com.android.settings.ContextualPageSettings" />
