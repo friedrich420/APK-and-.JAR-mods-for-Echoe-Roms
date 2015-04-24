@@ -182,8 +182,6 @@
 
     iget-object v0, p0, Lcom/android/server/telecom/secutils/SecAsyncRingtonePlayer;->mAudioManager:Landroid/media/AudioManager;
 
-    invoke-virtual {v0, v4, v5, v3}, Landroid/media/AudioManager;->setStreamVolume(III)V
-
     iget-object v0, p0, Lcom/android/server/telecom/secutils/SecAsyncRingtonePlayer;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0x7d0
