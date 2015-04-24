@@ -61,7 +61,7 @@
     <string name="config_wimaxServiceClassname" />
     <string name="config_wimaxStateTrackerClassname" />
     <string name="config_dreamsDefaultComponent">com.android.dreams.basic/com.android.dreams.basic.Colors</string>
-    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <string name="config_dozeComponent" />
     <string name="config_ethernet_tcp_buffers">524288,1048576,3145728,524288,1048576,2097152</string>
     <string name="config_wifi_tcp_buffers">524288,1048576,4525824,524288,1048576,4525824</string>
     <string name="config_chooseAccountActivity">android/android.accounts.ChooseAccountActivity</string>
@@ -2950,8 +2950,4 @@ RETURN TO,"</string>
     <string name="storage_go_to_myfiles">Go to My Files</string>
     <string name="storage_sd_card_title">SD card</string>
     <string name="storage_sdcard_insert">An SD card has been inserted.</string>
-    <string name="global_action_screenshot">Take Screenshot</string>
-    <string name="global_action_flashlight">Flashlight</string>
-    <string name="global_actions_flashlight_on_status">On</string>
-    <string name="global_actions_flashlight_off_status">Off</string>
 </resources>
