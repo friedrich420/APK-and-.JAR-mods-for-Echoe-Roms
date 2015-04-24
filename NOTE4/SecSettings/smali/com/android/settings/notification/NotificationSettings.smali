@@ -46,6 +46,8 @@
 
 .field private mHandlerForMode:Landroid/os/Handler;
 
+.field private mHeadsUpNotification:Landroid/preference/CheckBoxPreference;
+
 .field private mInterruptions:Landroid/preference/Preference;
 
 .field private mLockscreen:Landroid/preference/ListPreference;
@@ -60,7 +62,7 @@
 
 .field private mNotificationAccess:Landroid/preference/Preference;
 
-.field private mNotificationPulse:Landroid/preference/TwoStatePreference;
+.field private mNotificationHeads:Landroid/preference/TwoStatePreference;
 
 .field private mNotificationRingtonePreference:Landroid/preference/Preference;
 
@@ -394,7 +396,7 @@
 
     .prologue
     .line 98
-    invoke-direct {p0}, Lcom/android/settings/notification/NotificationSettings;->updatePulse()V
+    invoke-direct {p0}, Lcom/android/settings/notification/NotificationSettings;->updateHeads()V
 
     return-void
 .end method
@@ -666,6 +668,75 @@
     .end packed-switch
 .end method
 
+.method private initHeads(Landroid/preference/PreferenceCategory;)V
+    .locals 2
+    .param p1, "parent"    # Landroid/preference/PreferenceCategory;
+
+    .prologue
+    .line 808
+    const-string v0, "heads_up_notifications_enabled"
+
+    invoke-virtual {p1, v0}, Landroid/preference/PreferenceCategory;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/preference/TwoStatePreference;
+
+    iput-object v0, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationHeads:Landroid/preference/TwoStatePreference;
+
+    .line 809
+    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationHeads:Landroid/preference/TwoStatePreference;
+
+    if-nez v0, :cond_0
+
+    .line 810
+    const-string v0, "NotificationSettings"
+
+    const-string v1, "Preference not found: notification_Heads Up"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 828
+    :goto_0
+    return-void
+
+    .line 813
+    :cond_0
+    invoke-virtual {p0}, Lcom/android/settings/notification/NotificationSettings;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x1120030
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 815
+    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationHeads:Landroid/preference/TwoStatePreference;
+
+    invoke-virtual {p1, v0}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
+
+    goto :goto_0
+
+    .line 817
+    :cond_1
+    invoke-direct {p0}, Lcom/android/settings/notification/NotificationSettings;->updateHeads()V
+
+    .line 818
+    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationHeads:Landroid/preference/TwoStatePreference;
+
+    new-instance v1, Lcom/android/settings/notification/NotificationSettings$6;
+
+    invoke-direct {v1, p0}, Lcom/android/settings/notification/NotificationSettings$6;-><init>(Lcom/android/settings/notification/NotificationSettings;)V
+
+    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+
+    goto :goto_0
+.end method
+
 .method private initLockscreenNotifications(Landroid/preference/PreferenceCategory;)V
     .locals 3
     .param p1, "parent"    # Landroid/preference/PreferenceCategory;
@@ -747,75 +818,6 @@
 
     .line 872
     invoke-direct {p0}, Lcom/android/settings/notification/NotificationSettings;->updateLockscreenNotifications()V
-
-    goto :goto_0
-.end method
-
-.method private initPulse(Landroid/preference/PreferenceCategory;)V
-    .locals 2
-    .param p1, "parent"    # Landroid/preference/PreferenceCategory;
-
-    .prologue
-    .line 824
-    const-string v0, "notification_pulse"
-
-    invoke-virtual {p1, v0}, Landroid/preference/PreferenceCategory;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/preference/TwoStatePreference;
-
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationPulse:Landroid/preference/TwoStatePreference;
-
-    .line 825
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationPulse:Landroid/preference/TwoStatePreference;
-
-    if-nez v0, :cond_0
-
-    .line 826
-    const-string v0, "NotificationSettings"
-
-    const-string v1, "Preference not found: notification_pulse"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 844
-    :goto_0
-    return-void
-
-    .line 829
-    :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/notification/NotificationSettings;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x1120030
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 831
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationPulse:Landroid/preference/TwoStatePreference;
-
-    invoke-virtual {p1, v0}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
-
-    goto :goto_0
-
-    .line 833
-    :cond_1
-    invoke-direct {p0}, Lcom/android/settings/notification/NotificationSettings;->updatePulse()V
-
-    .line 834
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationPulse:Landroid/preference/TwoStatePreference;
-
-    new-instance v1, Lcom/android/settings/notification/NotificationSettings$6;
-
-    invoke-direct {v1, p0}, Lcom/android/settings/notification/NotificationSettings$6;-><init>(Lcom/android/settings/notification/NotificationSettings;)V
-
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     goto :goto_0
 .end method
@@ -1772,6 +1774,67 @@
     goto :goto_0
 .end method
 
+.method private updateHeads()V
+    .locals 5
+
+    .prologue
+    const/4 v1, 0x1
+
+    .line 831
+    iget-object v2, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationHeads:Landroid/preference/TwoStatePreference;
+
+    if-nez v2, :cond_0
+
+    .line 840
+    :goto_0
+    return-void
+
+    .line 835
+    :cond_0
+    :try_start_0
+    iget-object v2, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationHeads:Landroid/preference/TwoStatePreference;
+
+    invoke-virtual {p0}, Lcom/android/settings/notification/NotificationSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v3
+
+    const-string v4, "heads_up_notifications_enabled"
+
+    invoke-static {v3, v4}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;)I
+
+    move-result v3
+
+    if-ne v3, v1, :cond_1
+
+    :goto_1
+    invoke-virtual {v2, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    :try_end_0
+    .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    .line 837
+    :catch_0
+    move-exception v0
+
+    .line 838
+    .local v0, "snfe":Landroid/provider/Settings$SettingNotFoundException;
+    const-string v1, "NotificationSettings"
+
+    const-string v2, "notification_light_headsup not found"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    .line 835
+    .end local v0    # "snfe":Landroid/provider/Settings$SettingNotFoundException;
+    :cond_1
+    const/4 v1, 0x0
+
+    goto :goto_1
+.end method
+
 .method private updateLockscreenNotifications()V
     .locals 5
 
@@ -2180,67 +2243,6 @@
     invoke-static {v9, v10, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto/16 :goto_0
-.end method
-
-.method private updatePulse()V
-    .locals 5
-
-    .prologue
-    const/4 v1, 0x1
-
-    .line 847
-    iget-object v2, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationPulse:Landroid/preference/TwoStatePreference;
-
-    if-nez v2, :cond_0
-
-    .line 856
-    :goto_0
-    return-void
-
-    .line 851
-    :cond_0
-    :try_start_0
-    iget-object v2, p0, Lcom/android/settings/notification/NotificationSettings;->mNotificationPulse:Landroid/preference/TwoStatePreference;
-
-    invoke-virtual {p0}, Lcom/android/settings/notification/NotificationSettings;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v3
-
-    const-string v4, "notification_light_pulse"
-
-    invoke-static {v3, v4}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;)I
-
-    move-result v3
-
-    if-ne v3, v1, :cond_1
-
-    :goto_1
-    invoke-virtual {v2, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
-    :try_end_0
-    .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    .line 853
-    :catch_0
-    move-exception v0
-
-    .line 854
-    .local v0, "snfe":Landroid/provider/Settings$SettingNotFoundException;
-    const-string v1, "NotificationSettings"
-
-    const-string v2, "notification_light_pulse not found"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    .line 851
-    .end local v0    # "snfe":Landroid/provider/Settings$SettingNotFoundException;
-    :cond_1
-    const/4 v1, 0x0
-
-    goto :goto_1
 .end method
 
 .method private updateRingtoneData(I)V
@@ -3169,7 +3171,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v14}, Lcom/android/settings/notification/NotificationSettings;->initPulse(Landroid/preference/PreferenceCategory;)V
+    invoke-direct {v0, v14}, Lcom/android/settings/notification/NotificationSettings;->initHeads(Landroid/preference/PreferenceCategory;)V
 
     .line 243
     move-object/from16 v0, p0
@@ -4036,7 +4038,7 @@
 
     .line 374
     :cond_16
-    const-string v14, "notification_pulse"
+    const-string v14, "heads_up_notifications_enabled"
 
     move-object/from16 v0, p0
 
@@ -4048,12 +4050,12 @@
 
     move-object/from16 v0, p0
 
-    iput-object v14, v0, Lcom/android/settings/notification/NotificationSettings;->mNotificationPulse:Landroid/preference/TwoStatePreference;
+    iput-object v14, v0, Lcom/android/settings/notification/NotificationSettings;->mNotificationHeads:Landroid/preference/TwoStatePreference;
 
     .line 375
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/notification/NotificationSettings;->mNotificationPulse:Landroid/preference/TwoStatePreference;
+    iget-object v14, v0, Lcom/android/settings/notification/NotificationSettings;->mNotificationHeads:Landroid/preference/TwoStatePreference;
 
     if-eqz v14, :cond_17
 
@@ -4063,7 +4065,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v15, v0, Lcom/android/settings/notification/NotificationSettings;->mNotificationPulse:Landroid/preference/TwoStatePreference;
+    iget-object v15, v0, Lcom/android/settings/notification/NotificationSettings;->mNotificationHeads:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v14, v15}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 

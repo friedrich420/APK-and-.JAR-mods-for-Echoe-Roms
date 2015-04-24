@@ -15,11 +15,11 @@
 
 
 # instance fields
+.field private final HEADS_UP_NOTIFICATIONS_ENABLED_URI:Landroid/net/Uri;
+
 .field private final LOCK_SCREEN_PRIVATE_URI:Landroid/net/Uri;
 
 .field private final LOCK_SCREEN_SHOW_URI:Landroid/net/Uri;
-
-.field private final NOTIFICATION_LIGHT_PULSE_URI:Landroid/net/Uri;
 
 .field private final VIBRATE_WHEN_RINGING_URI:Landroid/net/Uri;
 
@@ -52,13 +52,13 @@
     iput-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->VIBRATE_WHEN_RINGING_URI:Landroid/net/Uri;
 
     .line 1052
-    const-string v0, "notification_light_pulse"
+    const-string v0, "heads_up_notifications_enabled"
 
-    invoke-static {v0}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {v0}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->NOTIFICATION_LIGHT_PULSE_URI:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->HEADS_UP_NOTIFICATIONS_ENABLED_URI:Landroid/net/Uri;
 
     .line 1054
     const-string v0, "lock_screen_allow_private_notifications"
@@ -110,7 +110,7 @@
 
     .line 1081
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->NOTIFICATION_LIGHT_PULSE_URI:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->HEADS_UP_NOTIFICATIONS_ENABLED_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, p2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
@@ -121,7 +121,7 @@
     .line 1082
     iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->this$0:Lcom/android/settings/notification/NotificationSettings;
 
-    # invokes: Lcom/android/settings/notification/NotificationSettings;->updatePulse()V
+    # invokes: Lcom/android/settings/notification/NotificationSettings;->updateHeads()V
     invoke-static {v0}, Lcom/android/settings/notification/NotificationSettings;->access$2000(Lcom/android/settings/notification/NotificationSettings;)V
 
     .line 1084
@@ -179,7 +179,7 @@
     invoke-virtual {v0, v1, v2, p0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 1067
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->NOTIFICATION_LIGHT_PULSE_URI:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->HEADS_UP_NOTIFICATIONS_ENABLED_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v2, p0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
