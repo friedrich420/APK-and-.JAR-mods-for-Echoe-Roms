@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<matched
+  xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher">
+    <matchedapp launcher:beforeComponent="com.android.contacts/.activities.DialtactsActivity" launcher:afterComponent="com.android.contacts/com.android.dialer.DialtactsActivity" />
+</matched>

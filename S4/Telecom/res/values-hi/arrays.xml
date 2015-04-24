@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="incomming_calls_summary_array">
+        <item>उत्तर दें</item>
+        <item>अस्वीकारें</item>
+    </string-array>
+</resources>

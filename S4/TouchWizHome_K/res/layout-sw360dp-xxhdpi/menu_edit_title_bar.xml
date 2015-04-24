@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/mainmenu_toolbar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/menu_edit_back_container" android:background="@drawable/tw_tab_unselected_bar_holo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false">
+        <LinearLayout android:background="?android:actionBarItemBackground" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <include android:id="@id/menu_selected_back" layout="@layout/menu_title_bar_back" />
+            <TextView android:textSize="@dimen/menu_title_bar_text_size" android:textColor="@color/menu_title_bar_text_color" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/menu_edit_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/options_menu_edit" android:singleLine="true" android:contentDescription="@string/options_menu_edit" style="@style/android:TextAppearance.DeviceDefault.Widget.ActionBar.Title" />
+        </LinearLayout>
+        <LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+            <include layout="@layout/menu_title_bar_cancel_save_btns" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

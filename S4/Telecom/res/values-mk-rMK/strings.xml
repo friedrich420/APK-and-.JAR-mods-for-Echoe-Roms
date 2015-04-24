@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="telecommAppLabel">Телефон</string>
+    <string name="unknown">Непознато</string>
+    <string name="notification_missedCallTitle">Пропуштен повик</string>
+    <string name="notification_missedCallsTitle">Пропуштени повици</string>
+    <string name="notification_missedCallsMsg">%s пропуштени повици</string>
+    <string name="notification_missedCallTicker">Пропуштен повик од %s</string>
+    <string name="notification_missedCall_call_back">Повикува назад</string>
+    <string name="notification_missedCall_message">Порака</string>
+    <string name="accessibility_call_muted">Повикот е со исклучен звук</string>
+    <string name="accessibility_speakerphone_enabled">Интерфонот е овозможен.</string>
+    <string name="respond_via_sms_canned_response_1">Не можам да зборувам сега. Што има?</string>
+    <string name="respond_via_sms_canned_response_2">Веднаш ќе ти се јавам.</string>
+    <string name="respond_via_sms_canned_response_3">Ќе ти се јавам подоцна.</string>
+    <string name="respond_via_sms_canned_response_4">Не можам да зборувам сега. Јави ми се подоцна?</string>
+    <string name="respond_via_sms_setting_title">Брзи одговори</string>
+    <string name="respond_via_sms_setting_title_2">Уреди брзи одговори</string>
+    <string name="respond_via_sms_setting_summary" />
+    <string name="respond_via_sms_edittext_dialog_title">Брз одговор</string>
+    <string name="respond_via_sms_menu_reset_default_activity">Ресетирај стандардна апликација</string>
+    <string name="respond_via_sms_confirmation_format">Порака е испратена на %s.</string>
+    <string name="outgoing_call_not_allowed">Корисникот нема дозвола да прави телефонски повици ако не е итно</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">Повикот не се поврза, внесен е неважечки број.</string>
+    <string name="no_vm_number">Недостасува број на говорна пошта</string>
+    <string name="no_vm_number_msg">Нема мемориран број на говорна пошта на СИМ картичката.</string>
+    <string name="add_vm_number_str">Додај број</string>
+    <string name="call_from_you_can_say_answer_or_reject">%s се јавува. Кажете „Answer“ или „Reject“.</string>
+</resources>

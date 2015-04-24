@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="telecommAppLabel">ఫోన్</string>
+    <string name="unknown">తెలియదు</string>
+    <string name="notification_missedCallTitle">సమాధానం ఇవ్వని కాల్</string>
+    <string name="notification_missedCallsTitle">సమాధానం ఇవ్వని కాల్‌లు</string>
+    <string name="notification_missedCallsMsg">%s సమాధానం ఇవ్వని కాల్‌లు</string>
+    <string name="notification_missedCallTicker">%s నుండి సమాధానం ఇవ్వని కాల్</string>
+    <string name="notification_missedCall_call_back">తిరిగి కాల్ చేయి</string>
+    <string name="notification_missedCall_message">సందేశం</string>
+    <string name="accessibility_call_muted">కాల్ మ్యూట్ చేయబడింది.</string>
+    <string name="accessibility_speakerphone_enabled">స్పీకర్ ఫోన్ ప్రారంభించబడింది.</string>
+    <string name="respond_via_sms_canned_response_1">ఇప్పుడు మాట్లాడలేను. విషయం ఏమిటి?</string>
+    <string name="respond_via_sms_canned_response_2">నేను ఇప్పుడే మీకు కాల్ చేస్తాను.</string>
+    <string name="respond_via_sms_canned_response_3">నేను మీకు తర్వాత కాల్ చేస్తాను.</string>
+    <string name="respond_via_sms_canned_response_4">ఇప్పుడు మాట్లాడలేను. నాకు తర్వాత కాల్ చేస్తారా?</string>
+    <string name="respond_via_sms_setting_title">శీఘ్ర ప్రతిస్పందనలు</string>
+    <string name="respond_via_sms_setting_title_2">శీఘ్ర ప్రతిస్పందనలు సవరించండి</string>
+    <string name="respond_via_sms_setting_summary" />
+    <string name="respond_via_sms_edittext_dialog_title">శీఘ్ర ప్రతిస్పందన</string>
+    <string name="respond_via_sms_menu_reset_default_activity">డిఫాల్ట్ అనువర్తనాన్ని రీసెట్ చేయి</string>
+    <string name="respond_via_sms_confirmation_format">%sకు సందేశం పంపబడింది.</string>
+    <string name="outgoing_call_not_allowed">ఈ వినియోగదారుకి అత్యవసరం కాని ఫోన్ కాల్‌లు చేయడానికి అనుమతి లేదు</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">కాల్ చేయలేరు, చెల్లుబాటు అయ్యే నంబర్ నమోదు చేయలేదు.</string>
+    <string name="no_vm_number">వాయిస్ మెయిల్ నంబర్ లేదు</string>
+    <string name="no_vm_number_msg">SIM కార్డులో వాయిస్ మెయిల్ నంబర్ ఏదీ నిల్వ చేయబడలేదు.</string>
+    <string name="add_vm_number_str">నంబర్‌ను జోడించు</string>
+    <string name="call_from_you_can_say_answer_or_reject">%s కాల్ చేస్తోంది. “Answer” లేదా “Reject” చెప్పండి.</string>
+</resources>

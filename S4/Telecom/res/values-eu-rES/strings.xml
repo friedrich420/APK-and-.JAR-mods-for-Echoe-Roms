@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="telecommAppLabel">Telefonoa</string>
+    <string name="unknown">Ezezaguna</string>
+    <string name="notification_missedCallTitle">Dei galdua</string>
+    <string name="notification_missedCallsTitle">Dei galduak</string>
+    <string name="notification_missedCallsMsg">%s dei galdu</string>
+    <string name="notification_missedCallTicker">Deitzaile honen dei galdua: %s</string>
+    <string name="notification_missedCall_call_back">Erantzun deiari</string>
+    <string name="notification_missedCall_message">Mezua</string>
+    <string name="accessibility_call_muted">Deiaren audioa desaktibatu da.</string>
+    <string name="accessibility_speakerphone_enabled">Bozgorailua gaitu da.</string>
+    <string name="respond_via_sms_canned_response_1">Ezin dut hitz egin. Arazoren bat al dago?</string>
+    <string name="respond_via_sms_canned_response_2">Oraintxe deituko dizut bueltan.</string>
+    <string name="respond_via_sms_canned_response_3">Geroago deituko dizut.</string>
+    <string name="respond_via_sms_canned_response_4">Ezin dut hitz egin. Deitu geroago.</string>
+    <string name="respond_via_sms_setting_title">Erantzun bizkorrak</string>
+    <string name="respond_via_sms_setting_title_2">Editatu erantzun bizkorrak</string>
+    <string name="respond_via_sms_setting_summary" />
+    <string name="respond_via_sms_edittext_dialog_title">Erantzun bizkorra</string>
+    <string name="respond_via_sms_menu_reset_default_activity">Berrezarri aplik. lehenetsia</string>
+    <string name="respond_via_sms_confirmation_format">Mezua bidali da %s zenbakira.</string>
+    <string name="outgoing_call_not_allowed">Erabiltzaile honek ez du larrialdietakoak ez diren telefono-deiak egiteko baimenik</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">Ez da deia egin ez delako baliozko zenbakirik idatzi.</string>
+    <string name="no_vm_number">Erantzungailuaren zenbakia falta da</string>
+    <string name="no_vm_number_msg">Ez da erantzungailuaren zenbakirik gorde SIM txartelean.</string>
+    <string name="add_vm_number_str">Gehitu zenbakia</string>
+    <string name="call_from_you_can_say_answer_or_reject">%s deitzen ari da. Esan “Answer” edo “Reject”.</string>
+</resources>

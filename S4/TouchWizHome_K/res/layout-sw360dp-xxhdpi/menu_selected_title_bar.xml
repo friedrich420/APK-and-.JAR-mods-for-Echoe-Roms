@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/mainmenu_toolbar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/tw_tab_unselected_bar_holo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:layoutDirection="locale">
+        <LinearLayout android:layout_gravity="left" android:id="@id/menu_selected_back" android:background="?android:actionBarItemBackground" android:focusable="true" android:nextFocusRight="@id/menu_title_cancel_done_btns" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <include layout="@layout/menu_title_bar_back" />
+            <TextView android:textSize="@dimen/menu_title_bar_text_size" android:textColor="@color/menu_title_selected_text" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/menu_selected_num" android:paddingLeft="@dimen/menu_title_bar_left_padding" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right" android:id="@id/menu_title_cancel_done_btns" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <include layout="@layout/menu_title_bar_cancel_done_btns" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

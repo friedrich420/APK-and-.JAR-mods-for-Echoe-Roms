@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="telecommAppLabel">Teléfono</string>
+    <string name="unknown">Descoñecido</string>
+    <string name="notification_missedCallTitle">Chamada perdida</string>
+    <string name="notification_missedCallsTitle">Chamadas perdidas</string>
+    <string name="notification_missedCallsMsg">%s chamadas perdidas</string>
+    <string name="notification_missedCallTicker">Chamada perdida de %s</string>
+    <string name="notification_missedCall_call_back">Devolver chamada</string>
+    <string name="notification_missedCall_message">Mensaxe</string>
+    <string name="accessibility_call_muted">Chamada silenciada</string>
+    <string name="accessibility_speakerphone_enabled">Altofalante activado</string>
+    <string name="respond_via_sms_canned_response_1">Non podo falar agora. Que pasa?</string>
+    <string name="respond_via_sms_canned_response_2">Chámote agora.</string>
+    <string name="respond_via_sms_canned_response_3">Chámote máis tarde.</string>
+    <string name="respond_via_sms_canned_response_4">Non podo falar. Chámasme despois?</string>
+    <string name="respond_via_sms_setting_title">Respostas rápidas</string>
+    <string name="respond_via_sms_setting_title_2">Editar respostas rápidas</string>
+    <string name="respond_via_sms_setting_summary" />
+    <string name="respond_via_sms_edittext_dialog_title">Resposta rápida</string>
+    <string name="respond_via_sms_menu_reset_default_activity">Restablecer aplicación predet.</string>
+    <string name="respond_via_sms_confirmation_format">Mensaxe enviada ao %s.</string>
+    <string name="outgoing_call_not_allowed">Este usuario non ten permiso para facer chamadas telefónicas que non sexan de emerxencia</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">Chamada non enviada; o número introducido non é válido.</string>
+    <string name="no_vm_number">Falta o número de correo de voz</string>
+    <string name="no_vm_number_msg">Non hai ningún número de correo de voz almacenado na tarxeta SIM.</string>
+    <string name="add_vm_number_str">Engadir número</string>
+    <string name="call_from_you_can_say_answer_or_reject">%s está chamando. Di “Answer” ou “Reject”.</string>
+</resources>

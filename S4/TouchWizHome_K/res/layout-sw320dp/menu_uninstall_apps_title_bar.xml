@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:background="@drawable/menu_tab_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:background="@drawable/tw_tab_unselected_bar_holo" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/menu_selected_back_down" android:background="?android:actionBarItemBackground" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:src="?android:homeAsUpIndicator" android:scaleType="center" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/menu_title_bar_text_size" android:textColor="@color/menu_title_selected_text" android:gravity="center|left" android:id="@id/menu_selected_backtext" android:paddingLeft="@dimen/menu_title_bar_left_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/menu_uninstall" android:shadowColor="#bf000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    </LinearLayout>
+</FrameLayout>

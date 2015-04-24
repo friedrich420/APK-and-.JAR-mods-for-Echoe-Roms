@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="telecommAppLabel">Телефон</string>
+    <string name="notification_missedCall_call_back">Кайра чалуу</string>
+    <string name="notification_missedCall_message">Билдирүү</string>
+    <string name="accessibility_call_muted">Чалуу үнсүз тартипте.</string>
+    <string name="accessibility_speakerphone_enabled">Динамик иштеп жатат.</string>
+    <string name="respond_via_sms_setting_title">Тез жооптор</string>
+    <string name="respond_via_sms_setting_title_2">Тез жоопторду өзгөртүү</string>
+    <string name="respond_via_sms_setting_summary" />
+    <string name="respond_via_sms_edittext_dialog_title">Тез жооп</string>
+    <string name="respond_via_sms_menu_reset_default_activity">Абалкы колдонмону өзгөртүү</string>
+    <string name="respond_via_sms_confirmation_format">%s номуруна билдирүү жөнөтүлдү.</string>
+    <string name="outgoing_call_not_allowed">Бул колдонуучу шашылыш эмес чалууларды аткара албайт</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">Чалуу жөнөтүлгөн жок, жарактуу номер киргизилген жок.</string>
+    <string name="call_from_you_can_say_answer_or_reject">%s чалып жатат. “Ал” же “Четке как” деп айтыңыз.</string>
+</resources>

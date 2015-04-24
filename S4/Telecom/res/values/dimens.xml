@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_icon_size">64.0dip</dimen>
+    <dimen name="toast_y_offset">64.0dip</dimen>
+    <dimen name="carmode_reject_videocall_dialog_width">234.0dip</dimen>
+    <dimen name="carmode_reject_videocall_button_height">64.0dip</dimen>
+    <dimen name="carmode_reject_videocall_icon_size">70.0dip</dimen>
+    <dimen name="carmode_reject_videocall_event_info_height">86.0dip</dimen>
+    <dimen name="carmode_reject_videocall_event_info_text_size">24.0dip</dimen>
+    <dimen name="carmode_reject_videocall_event_info_text_size_big">27.0dip</dimen>
+</resources>

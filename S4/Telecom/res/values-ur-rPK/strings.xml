@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="telecommAppLabel">فون</string>
+    <string name="unknown">نامعلوم</string>
+    <string name="notification_missedCallTitle">چھوٹی ہوئی کال</string>
+    <string name="notification_missedCallsTitle">چھوٹی ہوئی کالیں</string>
+    <string name="notification_missedCallsMsg">%s چھوٹی ہوئی کالیں</string>
+    <string name="notification_missedCallTicker">%s کی جانب سے چھوٹی ہوئی کال</string>
+    <string name="notification_missedCall_call_back">واپس کال کریں</string>
+    <string name="notification_missedCall_message">پیغام</string>
+    <string name="accessibility_call_muted">کال خاموش کر دی گئی۔</string>
+    <string name="accessibility_speakerphone_enabled">اسپیکر فون فعال ہوگیا۔</string>
+    <string name="respond_via_sms_canned_response_1">ابھی بات نہیں کرسکتے۔ کیا ہو رہا ہے؟</string>
+    <string name="respond_via_sms_canned_response_2">میں ابھی آپ کو واپسی کال کروں گا۔</string>
+    <string name="respond_via_sms_canned_response_3">میں آپ کو بعد میں کال کروں گا۔</string>
+    <string name="respond_via_sms_canned_response_4">ابھی بات نہیں کرسکتے۔ مجھے بعد میں کال کریں؟</string>
+    <string name="respond_via_sms_setting_title">فوری جوابات</string>
+    <string name="respond_via_sms_setting_title_2">فوری جوابات میں ترمیم کریں</string>
+    <string name="respond_via_sms_setting_summary" />
+    <string name="respond_via_sms_edittext_dialog_title">فوری جواب</string>
+    <string name="respond_via_sms_menu_reset_default_activity">ڈیفالٹ ایپ دوبارہ ترتیب دیں</string>
+    <string name="respond_via_sms_confirmation_format">پیغام %s کو بھیج دیا گیا۔</string>
+    <string name="outgoing_call_not_allowed">اس صارف کو غیر ہنگامی فون کالیں کرنے کی اجازت نہیں ہے</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">کال نہیں بھیجی گئی، کوئی درست نمبر درج نہیں کیا گیا۔</string>
+    <string name="no_vm_number">صوتی میل نمبر درج نہیں ہے</string>
+    <string name="no_vm_number_msg">‏SIM کارڈ پر کوئی بھی صوتی میل نمبر اسٹور نہیں ہے۔</string>
+    <string name="add_vm_number_str">نمبر شامل کریں</string>
+    <string name="call_from_you_can_say_answer_or_reject">%s کال کررہا ہے۔ “Answer” یا “Reject” بولیں۔</string>
+</resources>

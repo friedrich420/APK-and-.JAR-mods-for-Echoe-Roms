@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HomeEditDragBarIcon">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/home_edit_bar_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="HomeIcon" parent="@style/BaseHomeIcon">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:lines">1</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="HomeIcon.Folder" parent="@style/HomeIcon">
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    <style name="HotseatIcon" parent="@style/BaseHotseatIcon">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:lines">1</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    <style name="HotseatIcon.Folder" parent="@style/HotseatIcon">
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    <style name="MenuEditDragBarIcon">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">@color/edit_cancel_menu_text</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    <style name="MenuIcon" parent="@style/BaseMenuIcon">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:lines">2</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    <style name="MenuIcon.Folder" parent="@style/MenuIcon">
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    <style name="MenuIcon.FolderItem" parent="@style/MenuIcon">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+</resources>
