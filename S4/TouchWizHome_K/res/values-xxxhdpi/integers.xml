@@ -10,7 +10,7 @@
     <integer name="home_cellCountX">4</integer>
     <integer name="home_cellCountY">4</integer>
     <integer name="home_pageIndicatorMaxVisible">9</integer>
-    <integer name="page_snap_animation_duration">550</integer>
+    <integer name="page_snap_animation_duration">200</integer>
     <integer name="hotseat_cellCountX">5</integer>
     <integer name="hotseat_cellCountY">1</integer>
     <integer name="menuAppsGrid_cellCountX">5</integer>
