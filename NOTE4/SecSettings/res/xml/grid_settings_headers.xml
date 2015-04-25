@@ -221,4 +221,5 @@
         </intent>
     </header>
     <header android:icon="@drawable/ic_setting_grid_applicationmanager" android:id="@id/application_settings_vzw" android:title="@string/quick_applications" android:fragment="com.android.settings.ApplicationsSettingsVZW" />
+	<header android:icon="@drawable/ic_setting_grid_applicationpermissions" android:id="@id/appops_settings" android:title="@string/app_ops_settings" android:fragment="com.android.settings.applications.AppOpsSummary" />
 </preference-headers>

@@ -58,6 +58,7 @@
     <header android:id="@id/manufacturer_settings" android:fragment="com.android.settings.WirelessSettings">
         <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
     </header>
+	<header android:icon="@drawable/ic_setting_grid_applicationpermissions" android:id="@id/appops_settings" android:title="@string/app_ops_settings" android:fragment="com.android.settings.applications.AppOpsSummary" />
     <header android:id="@id/personal_section" android:title="@string/header_category_personal" />
     <header android:icon="@drawable/ic_settings_docomoservice" android:id="@id/docomoservice_settings" android:title="@string/docomoservice_settings">
         <intent android:targetPackage="com.nttdocomo.android.docomoset" android:action="android.intent.action.MAIN" android:targetClass="com.nttdocomo.android.docomoset.DocomoServiceSetting" />
