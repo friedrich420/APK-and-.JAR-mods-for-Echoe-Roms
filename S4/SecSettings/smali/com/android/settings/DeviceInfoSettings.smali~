@@ -5136,6 +5136,24 @@
 
     if-ltz v39, :cond_25
 
+    .line 255
+    const-string v39, "knox_version"
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v39
+
+    invoke-virtual {v0, v1}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v39
+
+    const/16 v40, 0x1
+
+    invoke-virtual/range {v39 .. v40}, Landroid/preference/Preference;->setEnabled(Z)V
+
+    .line 256
+    invoke-direct/range {p0 .. p0}, Lcom/android/settings/DeviceInfoSettings;->showKnoxVersion()V
+
     .line 262
     :goto_2
     invoke-direct/range {p0 .. p0}, Lcom/android/settings/DeviceInfoSettings;->readSalesCode()Ljava/lang/String;
